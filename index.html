@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Wulfes Word Master Mind</title>
+  <title>Wörtle (Wordle fia Schwobn)</title>
   <meta charset="UTF-8"/>
   <script src="index.js" defer></script>
   <link rel="stylesheet" type="text/css" href="style.css">  
 </head>
 <body id='page'>
+
+  <h1>Wörtle</h1>
+  <h3>(Wordle fia Schwobn)</h3>
+
+  <!-- CSS ribbon courtesy of https://codepo8.github.io/css-fork-on-github-ribbon/ -->
+  <style>#forkongithub a{background:#000;color:#fff;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#2c2;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:fixed;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:200px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style><span id="forkongithub"><a href="https://github.com/floe/woertle">Fork me on GitHub</a></span>
+
   <div id='displayMessage'></div>
   <div id='guessContainer'></div>
   <div id='keyboardContainer'>
@@ -22,6 +29,7 @@
         <div id='i' class='key'>I</div>
         <div id='o' class='key'>O</div>
         <div id='p' class='key'>P</div>      
+        <div id='ü' class='key'>Ü</div>
       </div>
       <div id = 'middleRow' class = 'row'>
         <div id='a' class='key'>A</div>
@@ -33,9 +41,11 @@
         <div id='j' class='key'>J</div>
         <div id='k' class='key'>K</div>
         <div id='l' class='key'>L</div>
+        <div id='ö' class='key'>Ö</div>
+        <div id='ä' class='key'>Ä</div>
       </div>
       <div id = 'bottomRow' class = 'row'>
-        <div id ='enter' class='bigKey key'>Enter</div>
+        <div id ='enter' class='bigKey key'>✅️</div>
         <div id='z' class='key'>Z</div>
         <div id='x' class='key'>X</div>
         <div id='c' class='key'>C</div>
@@ -43,7 +53,7 @@
         <div id='b' class='key'>B</div>
         <div id='n' class='key'>N</div>
         <div id='m' class='key'>M</div>  
-        <div id ='backspace' class='bigKey key' value = 'backspace'>Back</div>
+        <div id ='backspace' class='bigKey key' value = 'backspace'>⬅️</div>
       </div>
     </div>
 </body> 
