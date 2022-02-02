@@ -2,9 +2,7 @@
 
 ### Wordle fia Schwobn
 
-I'm sorry. It had to be done.
-
-Live version at [https://floe.github.io/woertle/](https://floe.github.io/woertle/).
+I'm sorry. It had to be done. Live version at [https://floe.github.io/woertle/](https://floe.github.io/woertle/).
 
 ![Screenshot](teaser.png)
 
