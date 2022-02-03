@@ -15,6 +15,7 @@ var wordList=[
 "lackl",
 "leffl",
 "seggl",
+"siach",
 "waffl",
 // rest contributed by Peter-Michael Mangold
 "äbbas",
