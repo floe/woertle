@@ -13,34 +13,6 @@ let guessNum = 0;
 let currentLetterBox = null;
 let currentBoxNum = 0;
 
-const wordList = [];
-
-wordList[0] = ["äbbes","alloi"];
-wordList[1] = ["baura","briah"];
-wordList[2] = ["ccccc"];
-wordList[3] = ["dregg"];
-wordList[4] = ["ebbes"];
-wordList[5] = ["fluag"];
-wordList[6] = ["gosch","glump"];
-wordList[7] = ["haufa"];
-wordList[8] = ["iiiii"];
-wordList[9] = ["jeses"];
-wordList[10] = ["kerle","kiebl","kiddl"];
-wordList[12] = ["lackl","leffl"];
-wordList[13] = ["macha"];
-wordList[14] = ["neine"];
-wordList[15] = ["obads"];
-wordList[16] = ["ppppp"];
-wordList[17] = ["qqqqq"];
-wordList[18] = ["roifa"];
-wordList[19] = ["seggl"];
-wordList[20] = ["ttttt"];
-wordList[21] = ["uuuuu"];
-wordList[22] = ["vvvvv"];
-wordList[23] = ["woich","waffl"];
-wordList[24] = ["yyyyy"];
-// wordList[25] = []
-
 let word;
 const WORD_LENGTH = 5;
 const GUESSES = 6;
@@ -71,10 +43,10 @@ function setup(){
 
 function getWord(){
   let randomLetterIndex = getRandomNumber(0,25);
-  let listLength = wordList[randomLetterIndex].length;
+  let listLength = wordList.length;
   let randomWordIndex = getRandomNumber(0, listLength);
 
-  return wordList[randomLetterIndex][randomWordIndex].toUpperCase();  
+  return wordList[randomWordIndex].toUpperCase();
 }
 
 function getRandomNumber(min,max){ //taken from internet
