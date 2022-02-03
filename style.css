@@ -42,13 +42,11 @@ h1,h3 {
   gap: 5px;
   height: 600px;
   width: 450px;
-  background-color: linear-gradient(#141e30, #243b55);
 }
 
 #keyboardContainer{
   height: 400px;
   width: 800px;
-  background-color: linear-gradient(#141e30, #243b55)
 }
 
 .wordContainer{
@@ -66,7 +64,6 @@ h1,h3 {
   z-index: 0;
   height: 80px;
   width: 80px;
-  background-color: linear-gradient(#141e30, #243b55);
   border: 2px solid #E6E6E6;
   font-size: 4rem;
   text-align: center;
@@ -78,7 +75,6 @@ h1,h3 {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  background-color: linear-gradient(#141e30, #243b55);
   height: 300px;
   width: 800px;
   gap: 20px;
